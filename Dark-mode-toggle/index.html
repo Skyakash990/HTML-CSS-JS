@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Light and dark mode</title>
+        <style>
+        body {
+        background-color: white;
+        color: black;
+        }
+
+        body.dark-mode {
+        background-color: black;
+        color: white;
+        }
+
+        .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        }
+
+        body.dark-mode .btn-primary {
+        background-color: #375a7f;
+        border-color: #375a7f;
+        }
+
+        .card {
+        background-color: white;
+        color: black;
+        border: 1px solid #ddd;
+        }
+
+        body.dark-mode .card {
+        background-color: #333;
+        color: white;
+        border: 1px solid #444;
+        }
+        .container1 {
+            background-color: rgb(248, 244, 244);
+            color: rgb(0, 0, 0);
+        }
+
+        body.dark-mode .container1 {
+            background-color: #0e0d0d;
+            color: white;
+        }
+  </style>
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <!-- Font Awesome CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <!-- Code starts from here -->
+            <button id="toggle-mode" class="btn btn-primary mb-3">Toggle
+                Light/Dark Mode</button>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">This is a card example to demonstrate
+                        light and dark mode.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class>
+                <div class>
+                    <h5 class>Card Title</h5>
+                    <p class="t">This is a card example to demonstrate
+                        light and dark mode.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="container1">
+                <h1>hello World</h1>
+            </div>
+            <!-- Code ends here -->
+        </div>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+
+</html>
